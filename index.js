@@ -14,21 +14,17 @@ function genbtn(){
     document.getElementById("pass2").textContent =pass2
 }
 function cpybtn1() {
-    var copyBoxElement = document.getElementById('pass1').textContent
-    copyBoxElement.contenteditable = true;
+    var copyBoxElement = document.getElementById('pass1')
     copyBoxElement.focus();
     copyBoxElement.execCommand('select');
     copyBoxElement.execCommand("copy");
-    copyBoxElement.contenteditable = false;
     alert("Text has been copied")
 }
 function cpybtn2() {
 
     var copyBoxElement = document.getElementById('pass2');
-    copyBoxElement.contenteditable = true;
     copyBoxElement.focus();
     document.execCommand('select');
     document.execCommand("copy");
-    copyBoxElement.contenteditable = false;
     alert("Text has been copied")
 }
