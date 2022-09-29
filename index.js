@@ -14,7 +14,7 @@ function genbtn(){
     document.getElementById("pass2").textContent =pass2
 }
 function cpybtn1() {
-    var copyBoxElement = document.getElementById('pass1').innerHTML
+    var copyBoxElement = document.getElementById('pass1').textContent
     copyBoxElement.contenteditable = true;
     copyBoxElement.focus();
     copyBoxElement.execCommand('select');
