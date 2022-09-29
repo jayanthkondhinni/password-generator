@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Password Generator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <script src="index.js"> </script>
+        <div id="box">
+            <h1 style="margin-bottom: 0px;">Generate a <br><div style="color:rgba(74, 223, 134, 1)">random password</div></h1>
+            <p style="margin-top: 0px;">Never use an insecure password again.</p>
+            <div style="display: flex; justify-content: space-around;"><button id="btn" onclick="genbtn()">Generate passwords</button></div>
+            <br>
+            <div class="flex">
+                <div class="flex">
+                    <div id="pass1" contenteditable="false"></div>
+                    <button class="cpybtn" onclick="cpybtn1()" >❐</button>
+                </div>
+                <div class="flex">
+                    <div id="pass2" contenteditable="false"></div>
+                    <button class="cpybtn" onclick="cpybtn2()">❐</button>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
