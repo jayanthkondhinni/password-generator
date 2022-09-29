@@ -18,7 +18,7 @@ function cpybtn1() {
     var copyBoxElement = document.getElementById('pass1');
     copyBoxElement.contenteditable = true;
     copyBoxElement.focus();
-    document.execCommand('selectAll');
+    document.execCommand('select');
     document.execCommand("copy");
     copyBoxElement.contenteditable = false;
     alert("Text has been copied")
@@ -28,7 +28,7 @@ function cpybtn2() {
     var copyBoxElement = document.getElementById('pass2');
     copyBoxElement.contenteditable = true;
     copyBoxElement.focus();
-    document.execCommand('selectAll');
+    document.execCommand('select');
     document.execCommand("copy");
     copyBoxElement.contenteditable = false;
     alert("Text has been copied")
