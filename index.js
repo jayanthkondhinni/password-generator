@@ -14,11 +14,12 @@ function genbtn(){
     document.getElementById("pass2").textContent =pass2
 }
 function cpybtn1() {
-
     var copyBoxElement = document.getElementById('pass1')
+    copyBoxElement.contenteditable = true
     copyBoxElement.focus()
     copyBoxElement.execCommand('select')
     copyBoxElement.execCommand("copy")
+    copyBoxElement.contenteditable = false
     alert("Text has been copied")
 }
 function cpybtn2() {
