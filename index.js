@@ -15,12 +15,10 @@ function genbtn(){
 }
 function cpybtn1() {
 
-    var copyBoxElement = document.getElementById('pass1');
-    copyBoxElement.contenteditable = true;
-    copyBoxElement.focus();
-    document.execCommand('select');
-    document.execCommand("copy");
-    copyBoxElement.contenteditable = false;
+    var copyBoxElement = document.getElementById('pass1')
+    copyBoxElement.focus()
+    copyBoxElement.execCommand('select')
+    copyBoxElement.execCommand("copy")
     alert("Text has been copied")
 }
 function cpybtn2() {
